@@ -27,8 +27,9 @@ public class Presedinte {
 	@Override
 	public String toString() {
 		final StringBuilder sb=new StringBuilder("Presedinte{");
-		sb.append("nume=").append(nume).append(", varsta=")
-		.append(varsta).append(", mandat=").append(mandat);
+		sb.append("nume=").append(nume);
+		sb.append(", varsta=").append(varsta);
+		sb.append(", mandat=").append(mandat);
 		sb.append("}");
 		return sb.toString();
 	}

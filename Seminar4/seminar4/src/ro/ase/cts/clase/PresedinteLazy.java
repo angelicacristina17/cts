@@ -21,17 +21,20 @@ public class PresedinteLazy {
 		this.mandat = mandat;
 	}
 	
-	public static synchronized PresedinteLazy getInstance() {
+	public static PresedinteLazy getInstance() {
+		
 		if(instance ==null) {
 			instance=new PresedinteLazy(nume, varsta, mandat);
 		}
 		return instance;
+		
 	}
 	
 	public String toString() {
 		final StringBuilder sb=new StringBuilder("Presedinte{");
-		sb.append("nume=").append(nume).append(", varsta=")
-		.append(varsta).append(", mandat=").append(mandat);
+		sb.append("nume=").append(nume);
+		sb.append(", varsta=").append(varsta);
+		sb.append(", mandat=").append(mandat);
 		sb.append("}");
 		return sb.toString();
 	}
