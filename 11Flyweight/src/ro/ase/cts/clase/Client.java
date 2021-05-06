@@ -5,16 +5,12 @@ public class Client implements Flyweight {
 	private String nrTelefon;
 	private String email;
 	
-	
 	public Client(String nume, String nrTelefon, String email) {
 		super();
 		this.nume = nume;
 		this.nrTelefon = nrTelefon;
 		this.email = email;
 	}
-
-
-
 
 	@Override
 	public String toString() {
@@ -29,13 +25,9 @@ public class Client implements Flyweight {
 		return builder.toString();
 	}
 
-
-
-
 	@Override
 	public void printeazaRezevarea(Rezervare rezervare) {
 		System.out.println(this.toString()+" "+rezervare.toString());
 		
 	}
-
 }
